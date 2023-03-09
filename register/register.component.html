@@ -1,0 +1,83 @@
+<div class="w-50 "
+    style="margin-left: 322px; margin-top: 123px; margin-bottom: 123px; background-color: white; opacity: 2; ">
+    <nav class="navbar navbar-dark bg-primary ">
+        <a class="navbar-brand" href="#">Ragister</a>
+        <button class=" bg-primary" (click)="goToHomeComponent()" style="border: 0px  ;" type="submit"><i
+                style="color: white; font-size: large; font: 1500;" class="bi bi-x-circle"></i></button>
+    </nav>
+    <form style="background-color: white;" [formGroup]="registrationForm">
+        <div class="mt-2">
+            <img src="../../assets/images.png" alt=""><br>
+            <div class="d-flex " style="color: blue; margin-left: 40px;">
+                <input type="file" formControlName="file">
+            </div>
+        </div>
+        <div class="row" style="margin-top: -240px; ">
+            <div class="col-4 mt-3" style="margin-left: 284px;">
+                <input type="text" formControlName="firstName" class="form-control" placeholder="First name">
+                <span style="color: red;"
+                    *ngIf="f.firstName && f.firstName.invalid && f.firstName.touched">Required</span>
+            </div>
+            <div class="col-3 mt-3" style="margin-left: 6px;">
+                <input type="text" formControlName="lastName" class="form-control" name="Last_name"
+                    placeholder="Last name">
+                <span style="color: red;" *ngIf="f.lastName && f.lastName.invalid && f.lastName.touched">Required</span>
+            </div>
+            <div class="col-7 mt-3" style="margin-left: 289px;">
+                <input type="email" formControlName="Email" class="form-control" placeholder="Email">
+                <span style="color: red;" *ngIf="f.Email && f.Email.invalid && f.Email.touched">Required</span>
+            </div>
+            <div class="col-7 mt-3" style="margin-left: 289px;">
+                <input type="text" formControlName="Mobile" class="form-control" placeholder="(540)754-3010">
+                <span style="color: red;" *ngIf="f.Mobile && f.Mobile.invalid && f.Mobile.touched">Required</span>
+            </div>
+            <div class="col-7 mt-3" style="margin-left: 289px; ">
+                Age : <em>20</em> <input style="width: 300px;" formControlName="age" type="range" class="form-range"
+                    min="20" max="60"><em>60</em>
+                <span style="color: red;" *ngIf="f.age && f.age.invalid && f.age.touched">Required</span>
+            </div>
+            <div class="col-7 mt-3" style="margin-left: 289px;">
+                <select style="display: inline-block;" formControlName="country" id="inputCountry" class="form-control">
+                    <option><em>Country</em></option>
+                    <option>India</option>
+                </select>
+                <span style="color: red;" *ngIf="f.country && f.country.invalid && f.country.touched">Required</span>
+            </div>
+
+            <div class="col-7 mt-3" style="margin-left: 289px;">
+                <select style="display: inline-block;" formControlName="state" id="inputState" class="form-control">
+                    <option><em>state</em></option>
+                    <option>Maharashatra</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Arunachal Pradesh</option>
+                    <option>Bihar</option>
+                    <option>Goa</option>
+                    <option>Chhattisgarh</option>
+                    <option>Gujarat</option>
+                </select>
+                <span style="color: red;" *ngIf="f.state && f.state.invalid && f.state.touched">Required</span>
+            </div>
+
+            <div class="col-7 mt-3" style="margin-left: 289px;">
+                <input type="text" formControlName="address" class="form-control" placeholder="Address">
+                <span style="color: red;" *ngIf="f.address && f.address.invalid && f.address.touched">Required</span>
+            </div>
+            <div class="col-7 mt-3" style="margin-left: 289px;">
+                <input type="text" formControlName="tags" class="form-control" placeholder="tags">
+                <span style="color: red;" *ngIf="f.tags && f.tags.invalid && f.tags.touched">Required</span>
+            </div>
+            <div class="form-check col-6 mt-3" style="margin-left: 307px;">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                </label>
+            </div>
+            <div class="col-7 mt-3" style="margin-left: 504px;">
+                <button type="button" (click)="goToHomeComponent()" class="btn btn-light">cancel</button>
+                <button [disabled]="registrationForm.invalid" (click)="onSubmit()" type="button"
+                    class="btn btn-primary">Submit</button>
+            </div>
+
+        </div>
+    </form>
+</div>

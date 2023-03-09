@@ -1,0 +1,70 @@
+<div class="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light  container ">
+        <div class="mt-4">
+            <h1 style="color: black; background-color: blue;" class="navbar-brand ">DEMO APP</h1>
+        </div>
+        <div class="collapse navbar-collapse mt-4" id="navbarNav ">
+            <ul class="justify-content-end justify-content-end navbar-nav w-100 navbar-nav w-100 ">
+                <li class="nav-item ">
+                    <a class="nav-link " routerLink="about" routerLinkActive="active-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="about" routerLinkActive="active-link">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="menu" routerLinkActive="active-link">JOBS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="contact" routerLinkActive="active-link">CLENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="contact" routerLinkActive="active-link">EMPLOYERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="contact" routerLinkActive="active-link">CONTACT US</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+</div>
+
+<div class="container mt-5">
+
+
+    <div class="right" *ngIf="students">
+        <h2 style="color: cornflowerblue; margin-left: -428px;">Profile</h2>
+        <div class="left" *ngIf="students">
+            <p class="image-box"><img src="student.file" alt=""></p>
+
+            <button type="button" class="btn btn-warning">Edit Photo</button>
+            <button style="margin-left: 80px;" type="button" class="btn btn-warning">Edit Profile</button>
+        </div>
+        <p>I` am {{students.firstName}} {{students.lastName}} and im above {{students.age}} years <br> and you can
+            sendto your email to <br> <em style="color: blue;">{{students.Email}}</em>
+            i live in the state of <br> {{students.state}} i like play
+            {{students.tags}} <br> and please send me newsletters. please <br> reach out to me on my phone number is
+            {{students.Mobile}}
+        </p>
+        <button type="button" (click)="goToHomeComponent()" class="btn btn-success">i Agree</button>
+    </div>
+
+</div>
+<div class="black-color" style=" background-color: black; margin-top: 600px;
+        height: 60vh;">
+    <div class="email-box" style=" text-align: center;">
+        <h1 style="color: black;">....</h1>
+        <p style=" margin-top: 90px;  color: white;">Subscribe to our job Seeker Mailing List</p>
+        <div class="mail" style=" border: 2px solid blue;
+        margin-left: 500px;
+        margin-right: 500px;
+        border-radius: 5px;">
+            <input style=" width: 289px;
+        background-color: black;
+        border: 2px solid black;" type="text" placeholder="Enter Your Email Address "><i style="color: white;"
+                class="bi bi-envelope-fill"></i>
+        </div>
+
+    </div>
+</div>

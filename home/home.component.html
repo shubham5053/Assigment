@@ -1,0 +1,115 @@
+<div class="background-box ">
+    <div class="bg-color">
+        <nav class="navbar navbar-expand-lg navbar-light  container ">
+            <div class="mt-5">
+                <h1 style="background-color: white;" class="navbar-brand ">DEMO APP</h1>
+            </div>
+            <div class="collapse navbar-collapse mt-5" id="navbarNav ">
+                <ul class="justify-content-end justify-content-end navbar-nav w-100 navbar-nav w-100">
+                    <li class="nav-item">
+                        <a class="nav-link " routerLink="about" routerLinkActive="active-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " routerLink="about" routerLinkActive="active-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="menu" routerLinkActive="active-link">JOBS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="contact" routerLinkActive="active-link">CLENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="contact" routerLinkActive="active-link">EMPLOYERS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="contact" routerLinkActive="active-link">CONTACT US</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <section class="d-flex container align-items-center" style="height: 250px;">
+            <div class="container mt-4  " style="height: 10px;">
+                <h1 style="color: white; font-style:italic"><em>i'm looking for...</em> </h1>
+
+
+                <form class=" mt-4">
+                    <input style=" width: 800px;
+                      height: 50px;
+                       padding: 20px;
+                        border: 5px solid white;" class="input-job" type="text" class="mt-2"
+                        placeholder="Enter a job Description">
+                    <button style=" margin-left: 150px;
+                          width: 120px;
+                          height: 50px;
+                          background-color: rgb(70, 38, 158);
+                          border: 5px solid rgb(70, 38, 158);
+                         "><i class="bi bi-search"></i> &nbsp; search</button>
+                    <div class="form-group form-check mt-4  check">
+                        <input style="height: 30px;" class="inputcheck" type="checkbox" class="form-check-input"
+                            id="exampleCheck1">
+                        <label style="color: white;" class="form-check-label" for="exampleCheck1"> <em>Full Time</em>
+                        </label>
+                        <input style="margin-left: 20px; height: 30px; " class="inputcheck" type="checkbox"
+                            class="form-check-input" id="exampleCheck1">
+                        <label style="margin-left: 40px; color: white;" class="form-check-label"
+                            for="exampleCheck1"><em>Part Time /
+                                Casual /
+                                Freelancer</em></label>
+                        <select style="display: inline-block;  " id="inputState" class="form-control">
+                            <option><em>Select Your Location</em></option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <button routerLink="register" data-target="#myModel" data-toggle="model"
+                        (click)="gotoRegisterComponent()"
+                        style="margin-left: 518px; margin-top: 50px;"><em>Register</em></button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <div class="middlepage" style="height: 75vh;">
+        <div class="text" style=" text-align: center;
+       justify-content: center;">
+            <h2 style="margin-top: 60px;"><em>We're leaders in</em></h2>
+            <h1 style=" margin-top: 40px;">Creative Digital Recruitment</h1>
+
+            <p style="margin-top: 55px;"> Based in Surry Hills, the creative hub of Sydney we are surrounded by
+                creativity
+                <br> and that reflects on
+                the type of jobs we recruit for.
+            </p>
+            <input type="text" placeholder="FIND OUT MORE ABOUT US!" class="rounded" style="height: 50px;    margin-top: 40px;   text-align: center; width: 246px;  color: rgb(106, 127, 167);
+         border: 2px solid rgb(106, 127, 167)">
+        </div>
+    </div>
+    <div class="black-color" style=" background-color: black;
+        height: 60vh;">
+        <div class="email-box" style=" text-align: center;">
+            <h1 style="color: black;">....</h1>
+            <p style=" margin-top: 90px;  color: white;">Subscribe to our job Seeker Mailing List</p>
+            <div class="mail" style=" border: 2px solid blue;
+        margin-left: 500px;
+        margin-right: 500px;
+        border-radius: 5px;">
+                <input style=" width: 289px;
+        background-color: black;
+        color: white;
+    border: none;
+        border: 2px solid black;" type="text" placeholder="Enter Your Email Address "><i style="color: white;"
+                    class="bi bi-envelope-fill"></i>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer container">
+        <p style="color: white;">...</p>
+        <i class="bi bi-envelope"></i>&nbsp;<input type="text">
+        <p>Copyroght <i class="bi bi-c-circle"></i> 2022 Two Bytes Consulting <b>Terms & Policies</b></p>
+        <div>
+            <button><i class="bi bi-twitter"></i>Tweet</button><button><i class="bi bi-facebook"></i>like</button>
+        </div>
+    </footer>
+</div>

@@ -1,0 +1,87 @@
+{
+  "register": [
+    {
+      "file": "C:\\fakepath\\s.png.png",
+      "fileSource": {},
+      "firstName": "Shubham",
+      "lastName": "sakhare",
+      "Email": "Shubhamsakhare@gmail.com",
+      "Mobile": "1234567890",
+      "age": 31,
+      "state": "Maharashatra",
+      "country": "India",
+      "address": "dfghjkl",
+      "tags": "cvbnm,.",
+      "id": 1
+    },
+    {
+      "file": "C:\\fakepath\\s.png.png",
+      "fileSource": {},
+      "firstName": "shubham",
+      "lastName": "sakhare",
+      "Email": "shubhamsakhare@gmail.com",
+      "Mobile": "1234567890",
+      "age": 32,
+      "state": "Arunachal Pradesh",
+      "country": "India",
+      "address": "karve Nagar",
+      "tags": "Cricket",
+      "id": 2
+    },
+    {
+      "file": "C:\\fakepath\\s.png.png",
+      "fileSource": {},
+      "firstName": "Shubham",
+      "lastName": "sakhare",
+      "Email": "shubhamsakhare@gmail.com",
+      "Mobile": "1234567890",
+      "age": 28,
+      "state": "Chhattisgarh",
+      "country": "India",
+      "address": "Karve Nagar Pune",
+      "tags": "Cricket",
+      "id": 3
+    },
+    {
+      "file": "C:\\fakepath\\shubham .pdf.jpeg",
+      "fileSource": {},
+      "firstName": "dfgbnm",
+      "lastName": "WAEFSGD",
+      "Email": "ewafg@gmail.com",
+      "Mobile": "1234567890",
+      "age": 27,
+      "state": "Maharashatra",
+      "country": "India",
+      "address": "sdfgbnm",
+      "tags": "wefgrnf",
+      "id": 4
+    },
+    {
+      "file": "C:\\fakepath\\s.png.png",
+      "fileSource": {},
+      "firstName": "sdfghjk",
+      "lastName": "sdfgh",
+      "Email": "dfghjkl@gmail.com",
+      "Mobile": "1234567890",
+      "age": 24,
+      "state": "Maharashatra",
+      "country": "India",
+      "address": "sdfghjkl",
+      "tags": "dfghjk",
+      "id": 5
+    },
+    {
+      "file": "C:\\fakepath\\s.png.png",
+      "firstName": "Shubham",
+      "lastName": "Sakhare",
+      "Email": "shubhamsakhare@gmail.com",
+      "Mobile": "1234567890",
+      "age": 32,
+      "state": "Maharashatra",
+      "country": "India",
+      "address": "wdefgrh",
+      "tags": "dawefsg",
+      "id": 6
+    }
+  ]
+}
